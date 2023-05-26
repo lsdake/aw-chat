@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 /** @type {import('tailwindcss').Config} */
 
-
-
 // this function handles the opacity of color
 function withOpacityValue(variable) {
   return ({ opacityValue }) => {
@@ -12,7 +10,6 @@ function withOpacityValue(variable) {
     return `hsl(var(${variable}) / ${opacityValue})`
   }
 }
-
 
 module.exports = {
   content: [
