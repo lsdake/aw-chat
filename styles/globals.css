@@ -1,38 +1,42 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.scrollbar {
+    @apply overflow-y-scroll;
+    @apply overflow-x-clip;
+    @apply scrollbar-thin;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.scrollbar-primary {
+    @apply scrollbar-thumb-primary;
+    @apply scrollbar-track-primary-darker;
 }
 
-* {
-  box-sizing: border-box;
-}
+/* COLOR LIST!
+'teal': {
+    light: '#9ee0d9',
+    DEFAULT: '#038E7D',
+    dark: '#1b666a',
+    darker: '#163e41',
+  },
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+    // Oranges
+  'orange': {
+    light: '#f79e4a',
+    DEFAULT: '#EE792F',
+    dark: '#f35512',
+    darker: '#e03c06',
+  },
 
-h1,
-h2,
-p,
-ul {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-}
+    // Neutrals
+  'white': '#ffffff',
+  'gray': {
+    light: '#585f5f',
+    DEFAULT: '#373e3e',
+    dark: '#090b0b',
+  },
+  'black': '#000000',
+*/
