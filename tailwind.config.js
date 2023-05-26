@@ -36,8 +36,6 @@ module.exports = {
 
         'neutral-light': withOpacityValue('--neutral-light'),
         'neutral-dark': withOpacityValue('--neutral-dark'),
-
-
         
           // Teals
           'teal': {
